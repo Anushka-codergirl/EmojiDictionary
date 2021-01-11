@@ -49,14 +49,14 @@ export default function App() {
       <h3>emojis we know</h3>
       {emojisWeKnow.map(function (emoji) {
         return (
-          <span
+          <div
             className="box"
             onClick={() => emojiClickHandler(emoji)}
             style={{ cursor: "pointer" }}
             key={emoji}
           >
             {emoji}
-          </span>
+          </div>
         );
       })}
     </div>
